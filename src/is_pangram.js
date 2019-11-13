@@ -7,7 +7,8 @@ const isPangram = function isPangram(text) {
   }
 
   // mark every letter used by the text
-  for (const letter of text) {
+  const lowercaseText = text.toLowerCase();
+  for (const letter of lowercaseText) {
     if (alphabetObj[letter] === false) {
       alphabetObj[letter] = true;
     }
