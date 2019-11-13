@@ -6,8 +6,24 @@ for (const letter of alphabetString) {
 }
 
 const isPangram = function isPangram(text) {
-  return alphabetObj;
-  // return true;
+  // mark every letter used by the text
+  for (const letter of text) {
+    if (alphabetObj[letter] === false) {
+      alphabetObj[letter] = true;
+    }
+  }
+
+  // if every letter in alphabet has been used,
+  // return true
+  const values = Object.values(alphabetObj);
+  let isPangram = true;
+  for (const value of values) {
+    if (value === false) {
+      isPangram = false;
+    }
+  }
+
+  return isPangram;
 };
 
 module.exports = isPangram;
