@@ -1,11 +1,11 @@
-// build alphabet object for quick lookup
-const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
-const alphabetObj = {};
-for (const letter of alphabetString) {
-  alphabetObj[letter] = false;
-}
-
 const isPangram = function isPangram(text) {
+  // build alphabet object for quick lookup
+  const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
+  const alphabetObj = {};
+  for (const letter of alphabetString) {
+    alphabetObj[letter] = false;
+  }
+
   // mark every letter used by the text
   for (const letter of text) {
     if (alphabetObj[letter] === false) {
