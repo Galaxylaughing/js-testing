@@ -6,19 +6,9 @@ const reverseString = function(str) {
   return reversedString;
 }
 
-const stripWhiteSpace = function(str) {
-  let strippedString = '';
-  for (const char of str) {
-    if (char !== " ") {
-      strippedString += char;
-    }
-  }
-  return strippedString;
-}
-
 const isPalindrome = function isPalindrome(text) {
   // strip whitespace from text
-  text = stripWhiteSpace(text);
+  text = text.replace(/\s/g, '');
   
   // create reversed version of text
   let reversedText = reverseString(text);
