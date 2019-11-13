@@ -53,4 +53,10 @@ describe('isPangram()', () => {
     const result = isPangram(text);
     expect(result).toBe(true);
   });
+
+  test('works for a pangram with punctuation', () => {
+    const text = '"the quick brown fox, it jumps over the lazy dog!" she said.';
+    const result = isPangram(text);
+    expect(result).toBe(true);
+  });
 });
