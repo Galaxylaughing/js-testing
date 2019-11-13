@@ -7,6 +7,7 @@ describe('isPangram()', () => {
   });
 
   test('isPangram() is defined', () => {
+    const isPangram = require('../src/is_pangram');
     expect(isPangram).toBeDefined();
   });
 
@@ -22,6 +23,7 @@ describe('isPangram()', () => {
   // });
 
   test('works with a pangram with only lower case', () => {
+    const isPangram = require('../src/is_pangram');
     const text = 'the quick brown fox jumps over the lazy dog';
 
     const result = isPangram(text);
@@ -30,6 +32,7 @@ describe('isPangram()', () => {
   });
 
   test('works with "abcdefghijklmnopqrstuvwxyz"', () => {
+    const isPangram = require('../src/is_pangram');
     const text = 'abcdefghijklmnopqrstuvwxyz';
 
     const result = isPangram(text);
