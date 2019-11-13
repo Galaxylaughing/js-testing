@@ -10,11 +10,13 @@ describe('isPangram()', () => {
     const text = 'the quick brown fox jumps over the lazy dog';
 
     // Act
+    const result = isPangram(text);
 
     // Assert
+    expect(result).toBeTruthy();
   });
 
-  test('works with "abcdefghijklmnopqrstuvwxyz"', () => {
+  test.skip('works with "abcdefghijklmnopqrstuvwxyz"', () => {
     // Arrange
 
     // Act
@@ -23,7 +25,7 @@ describe('isPangram()', () => {
 
   });
 
-  test("missing character 'x'", () => {
+  test.skip("missing character 'x'", () => {
     // Arrange
 
     // Act
@@ -32,7 +34,7 @@ describe('isPangram()', () => {
 
   });
 
-  test('empty sentence', () => {
+  test.skip('empty sentence', () => {
     // Arrange
 
     // Act
@@ -41,7 +43,7 @@ describe('isPangram()', () => {
 
   });
 
-  test('pangram with underscores instead of spaces works', () => {
+  test.skip('pangram with underscores instead of spaces works', () => {
     // Arrange
 
     // Act
@@ -50,7 +52,7 @@ describe('isPangram()', () => {
 
   });
 
-  test('pangram with numbers', () => {
+  test.skip('pangram with numbers', () => {
     // Arrange
 
     // Act
