@@ -5,7 +5,7 @@ describe('isPangram()', () => {
     expect(isPangram).toBeDefined();
   });
 
-  test.skip('works with a pangram with only lower case', () => {
+  test('works with a pangram with only lower case', () => {
     const text = 'the quick brown fox jumps over the lazy dog';
 
     const result = isPangram(text);
@@ -29,7 +29,7 @@ describe('isPangram()', () => {
     expect(resultx).toBe(false);
   });
 
-  test.skip('fails if empty sentence', () => {
+  test('fails if empty sentence', () => {
     const text = '';
 
     const result = isPangram(text);
@@ -37,7 +37,7 @@ describe('isPangram()', () => {
     expect(result).toBe(false);
   });
 
-  test.skip('works for pangram with underscores instead of spaces', () => {
+  test('works for pangram with underscores instead of spaces', () => {
     const text = 'the_quick_brown_fox_jumps_over_the_lazy_dog';
 
     const result = isPangram(text);
@@ -45,7 +45,7 @@ describe('isPangram()', () => {
     expect(result).toBe(true);
   });
 
-  test.skip('works for pangram with numbers', () => {
+  test('works for pangram with numbers', () => {
     const text = 'the 5 quick brown foxes jump over the 3 lazy dogs';
 
     const result = isPangram(text);
