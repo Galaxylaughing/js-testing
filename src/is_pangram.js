@@ -16,14 +16,14 @@ const isPangram = function isPangram(text) {
   // if every letter in alphabet has been used,
   // return true
   const values = Object.values(alphabetObj);
-  let isPangram = true;
+  let textIsPangram = true;
   for (const value of values) {
     if (value === false) {
-      isPangram = false;
+      textIsPangram = false;
     }
   }
 
-  return isPangram;
+  return textIsPangram;
 };
 
 module.exports = isPangram;
